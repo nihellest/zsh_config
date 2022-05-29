@@ -1,0 +1,46 @@
+echo "\nLOAD ~/.my_aliases\n"
+
+############
+#  GLOBAL  #
+############
+
+alias ports="netstat -tulpn"
+alias reali="source ~/.my_aliases"
+
+############
+#  PYTHON  #
+############
+
+alias venv="source venv/bin/activate"
+
+# pip
+alias pipi="pip install"
+alias pipr="pip install -r requirements.txt"
+alias pipfr="pip freeze > requirements.txt"
+
+# Django global
+alias dja="django-admin"
+alias djasp="dja startproject"
+alias djasa="dja startapp"
+# Django local
+alias dj="python manage.py"
+alias djr="dj runserver"
+alias djmm="dj makemigrations"
+alias djmi="dj migrate"
+alias djmnr="djmm && djmi && djr"
+alias djmmm="djmm && djmi"
+alias djcsu="dj createsuperuser"
+alias djsh="dj shell"
+
+#########
+#  GIT  #
+#########
+
+alias gs="git status"
+alias gcam="git commit -am"
+alias gp="git push"
+alias gpl="git pull"
+alias ga="git add"
+alias gall="ga ."
+alias gch="git checkout"
+alias gchb="git checkout -b"
